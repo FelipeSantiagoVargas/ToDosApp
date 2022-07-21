@@ -1,0 +1,11 @@
+.section{
+    
+}
+
+.section__list{
+    padding: 0;
+    margin: 50px auto;
+    display: grid;
+    gap: 10px;
+    width: fit-content;
+}

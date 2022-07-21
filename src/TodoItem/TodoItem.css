@@ -1,0 +1,63 @@
+.list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    gap: 10px;
+    border: 1px solid black;
+    width: 400px;
+    box-shadow: 5px 5px 1px black;
+    transition: 0.2s;
+}
+
+.list:hover{
+    box-shadow: 15px 5px 1px black;
+}
+
+.list__check{
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(13, 167, 13);
+    border-right: 1px solid black;
+    width: fit-content;
+    height: 5px;
+    transition: 1s;
+}
+
+.list__cancel{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    left: 30px;
+    text-shadow: 1px 1px 1px black;
+    transition: 0.3s;
+}
+
+.list__cancel:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.list__cancel__image{
+    width: 30%;
+}
+
+.list__check__image{
+    width: 50%;
+}
+
+.list__check--completed{
+    background-color: rgb(13, 167, 13);
+    text-decoration: line-through;
+}
+
+.list__check--incomplete{
+    background-color: rgb(76, 80, 76);
+}
+
+.list__check__text--completed{
+    text-decoration: line-through;
+}
+
+.list__check__text--incomplete{
+    text-decoration: none;
+}
